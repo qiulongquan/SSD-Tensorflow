@@ -1,4 +1,9 @@
 # Directories.
+
+.DS_Store
+.idea
+.idea/
+
 __pycache__/
 datasets/__pycache__/
 deployment/__pycache__/

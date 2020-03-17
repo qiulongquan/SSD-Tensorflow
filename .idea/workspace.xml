@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5818b750-4518-4e13-a87c-db5f0332e204" name="Default Changelist" comment="" />
+    <list default="true" id="5818b750-4518-4e13-a87c-db5f0332e204" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/bk/000003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/bk/cat-2083492_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/bk/elephant-1169258_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/bk/elephant-1421167_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/bk/elephant-1822636_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/bk/elephant-4102386_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/bk/thailand-142982_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/elephant-1822516_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/elephant-2729413_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/ssd_notebook.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/ssd_notebook.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_tf_file.tfrecord" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,15 +23,25 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/SSD_Tensorflow$a.coverage" NAME="a Coverage Results" MODIFIED="1584333027382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SSD_Tensorflow$SSD_Tensorflow.coverage" NAME="SSD-Tensorflow Coverage Results" MODIFIED="1584412653248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/SSD_Tensorflow$b.coverage" NAME="b Coverage Results" MODIFIED="1584339504144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/favorites.txt">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -35,12 +58,14 @@
         <option value="$PROJECT_DIR$/a.py" />
         <option value="$PROJECT_DIR$/b.py" />
         <option value="$PROJECT_DIR$/favorites.txt" />
+        <option value="$PROJECT_DIR$/notebooks/ssd_notebook.ipynb" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="179" />
-    <option name="y" value="57" />
+    <option name="x" value="77" />
+    <option name="y" value="23" />
     <option name="width" value="1843" />
     <option name="height" value="977" />
   </component>
@@ -56,6 +81,11 @@
             <path>
               <item name="SSD-Tensorflow" type="b2602c69:ProjectViewProjectNode" />
               <item name="SSD-Tensorflow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSD-Tensorflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSD-Tensorflow" type="462c0819:PsiDirectoryNode" />
+              <item name="logs_start_from_scratch" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -83,7 +113,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.b">
+  <component name="RunManager" selected="Jupyter Notebook.SSD-Tensorflow">
+    <configuration name="SSD-Tensorflow" type="JupiterNotebook" factoryName="Jupyter Notebook">
+      <module name="SSD-Tensorflow" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="additionalOptions" value="" />
+      <option name="ipnbHost" value="127.0.0.1" />
+      <option name="ipnbPort" value="8888" />
+      <method v="2" />
+    </configuration>
     <configuration name="a" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="SSD-Tensorflow" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -146,37 +194,38 @@
       <option name="presentableId" value="Default" />
       <updated>1584325869508</updated>
       <workItem from="1584325870677" duration="3506000" />
+      <workItem from="1584411789953" duration="1383000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3506000" />
+    <option name="totallyTimeSpent" value="4889000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="179" y="57" width="1843" height="977" extended-state="0" />
+    <frame x="77" y="23" width="1843" height="977" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24958123" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25293133" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3297491" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3297491" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,27 +239,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/b.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/a.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#8#0" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/b.py" />
+    <entry file="file://$PROJECT_DIR$/a.py" />
+    <entry file="file://$PROJECT_DIR$/notebooks/ssd_notebook.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/favorites.txt">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
