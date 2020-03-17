@@ -1,0 +1,27 @@
+<annotation>
+	<folder>VOC2007</folder>
+	<filename>000004.jpg</filename>
+	<path>/home/qiulongquan/github/SSD-Tensorflow/VOC2007/JPEGImages/000004.jpg</path>
+	<source>
+		<database>The VOC2007 Database</database>
+		<annotation>PASCAL VOC2007</annotation>
+	</source>
+	<size>
+		<width>500</width>
+		<height>280</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>elephant</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>106</xmin>
+			<ymin>77</ymin>
+			<xmax>367</xmax>
+			<ymax>259</ymax>
+		</bndbox>
+	</object>
+</annotation>
