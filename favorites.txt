@@ -9,6 +9,6 @@ https://qiita.com/Ka-k/items/cb942855ab669ff60630
 https://blog.csdn.net/u012968002/article/details/79884920
 
 
-https://qiita.com/tomo_makes/items/f70fe48c428d3a61e131
+Google AI Platform - Cloud ML Engineを初心者が動かして理解(前半)
 https://qiita.com/FukuharaYohei/items/b9421c2d2837e14eb049
-https://qiita.com/tomo_makes/items/b3c60b10f7b25a0a5935
+
