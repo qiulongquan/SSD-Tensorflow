@@ -1,3 +1,5 @@
+# 这个程序解决了，save restore问题，可以中断继续训练。
+
 # https://tuaiznblqcvchvaqbzxmjp.coursera-apps.org/notebooks/week2/Exercise2-Question-Copy1.ipynb
 # 参考上面的例子，callbacks 提前退出 训练的基本代码
 
@@ -79,13 +81,21 @@ def train(x_train, y_train, x_test, y_test,learning_rate, lambd, epochs, batch_s
 
     summary_op = tf.summary.merge([loss_summary, acc_summary])
 
-    checkpoint_path = "./chickpoints/model.ckpt"
-    checkpoint_epoch_path = checkpoint_path + ".epoch"
+    ckpt = tf.train.get_checkpoint_state("./chickpoints/")
+    if ckpt and ckpt.model_checkpoint_path:
+        print("ckpt_checkpoint_current_model_path={}".format(ckpt.model_checkpoint_path))
+        checkpoint_path = ckpt.model_checkpoint_path
+    else:
+        checkpoint_path = "./chickpoints/model.ckpt"
+
+    checkpoint_epoch_path = "./chickpoints/model.ckpt.epoch"
     final_model_path = "./chickpoints/model/model_final"
     now = datetime.now().strftime("%Y%m%d%H%M%S")
     logdir = './logs/' + now
     file_writer = tf.summary.FileWriter(logdir, tf.get_default_graph())
-    saver = tf.train.Saver()
+    # 在这里指定了最多保存2个模型，超过2个前面的一个模型就被替换掉，也可以指定时间，经过多少时间自动保存
+    # saver = tf.train.Saver(max_to_keep=2, keep_checkpoint_every_n_hours=2)
+    saver = tf.train.Saver(max_to_keep=2)
 
     n_epochs = epochs
     batch_size = batch_size
@@ -106,6 +116,7 @@ def train(x_train, y_train, x_test, y_test,learning_rate, lambd, epochs, batch_s
         for epoch in range(start_epoch, n_epochs):
             for batch_index in range(n_batches):
                 # 随机取一个batch的值，付给X_batch, y_batch
+                # 这个程序是随机读取的，实际情况应该是所有样本全部训练，这个地方需要修改一下
                 x_batch, y_batch = random_batch(x_train, y_train, batch_size)
                 # sess.run(train_op这个是进行实际的训练
                 sess.run(train_op, feed_dict={x: x_batch, y: y_batch})
@@ -119,8 +130,8 @@ def train(x_train, y_train, x_test, y_test,learning_rate, lambd, epochs, batch_s
                 [loss, summary_op, predictions, accuracy], \
                 feed_dict={x: x_test, y: y_test})
 
-            if (test_acc > 0.9810):
-                print("\nReached 98.1% accuracy so cancelling training!")
+            if (test_acc > 0.9910):
+                print("\nReached 99.1% accuracy so cancelling training!")
                 break
             else:
                 print("\nReached {} accuracy.".format(test_acc))
@@ -128,7 +139,7 @@ def train(x_train, y_train, x_test, y_test,learning_rate, lambd, epochs, batch_s
             file_writer.add_summary(summary_str, epoch)
             print("Epoch:", epoch, "\ttrain_Loss:", train_loss_val, "\ttrain_Acc:", train_acc, "\ttest_Loss:", loss_val, "\ttest_Acc:", test_acc)
             if epoch % 10 == 0:
-                saver.save(sess, checkpoint_path)
+                saver.save(sess, checkpoint_path, global_step=epoch)
                 with open(checkpoint_epoch_path, "wb") as f:
                     f.write(b"%d" % (epoch + 1))
 
